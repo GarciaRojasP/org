@@ -3,8 +3,8 @@ import "./CampoTexto.css"
 const CampoTexto = (props) => {
     const placeholderModificado = `${props.placeholder}...`
     return <div className="campo-texto">
-                <label>{props.label}</label>
-                <input placeholder={placeholderModificado} />
+                <label className="label">{props.label}</label>
+                <input className="input" placeholder={placeholderModificado} />
            </div>
 }
 
