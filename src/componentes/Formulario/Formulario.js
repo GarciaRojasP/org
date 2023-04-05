@@ -4,8 +4,15 @@ import ListaOpciones from "../CampoTexto/ListaOpciones.js"
 import Boton from "../Boton/Boton.js"
 
 const Formulario = () => {
+
+    const manejarEnvio = (event) => {
+        event.preventDefault();
+        console.log(event)
+    }
+
     return <section className="formulario">
-                <form>
+        
+                <form onSubmit={manejarEnvio}>
                     <h2>Rellena el formulario para crear el colaborador.</h2>
                     <CampoTexto label="Nombre" placeholder="Ingresar nombre" />
                     <CampoTexto label="Puesto" placeholder="Ingresar puesto"/>
