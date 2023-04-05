@@ -17,10 +17,7 @@ function App() {
   return (
     <div>
       <Header />
-      {/*mostrarFormulario === true ? <Formulario /> : <div></div>*/}
-      {/*mostrarFormulario ? <Formulario /> : <div></div> */}
-      {/*mostrarFormulario === true ? <Formulario /> : <></>*/} 
-      {mostrarFormulario && <Formulario />}
+      {mostrarFormulario ? <Formulario /> : <></> }
       <MiOrg estado={cambiarEstado} />
     </div>
   );
