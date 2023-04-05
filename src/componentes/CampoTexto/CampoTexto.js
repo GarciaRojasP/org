@@ -4,7 +4,6 @@ const CampoTexto = (props) => {
 
 
     const manejarCambio = (event) => {
-        console.log("cambio", event.target.value);
         props.set(event.target.value)
     }
 

@@ -14,12 +14,19 @@ const equipos = [
     "Innovación y Gestión"
 ]
 
-const ListaOpciones = () => {
+const ListaOpciones = (props) => {
+
+    const manejarCambio = (event) => {
+        props.set(event.target.value)
+    }
+
     return <div className="campo-texto">
                 <label className="label" >Equipos</label>
-                <select className="input select">
+                
+                <select className="input select" value={props.value} onChange={manejarCambio}>
+                    <option value="" disabled defaultValue="" hidden>Seleccionar equipo</option>
                     { equipos.map((equipo, index) => {
-                        return <option key={index}>{equipo}</option>
+                        return <option key={index} value={equipo} >{equipo}</option>
                     })}
                 </select>
            </div>

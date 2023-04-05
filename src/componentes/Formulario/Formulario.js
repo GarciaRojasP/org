@@ -9,11 +9,11 @@ const Formulario = () => {
     const [nombre,setNombre] = useState("");
     const [puesto,setPuesto] = useState("");
     const [foto,setFoto] = useState("");
+    const [equipo,setEquipo] = useState("");
 
     const manejarEnvio = (event) => {
         event.preventDefault();
-        console.log("Manejar el envio");
-        
+
 //      let datosEnviar = {
 //          nombre: nombre,
 //          puesto: puesto,
@@ -23,7 +23,8 @@ const Formulario = () => {
         let datosEnviar = {
             nombre,
             puesto,
-            foto
+            foto,
+            equipo
         }
 
         console.log(datosEnviar);
@@ -35,7 +36,7 @@ const Formulario = () => {
                     <CampoTexto label="Nombre" placeholder="Ingresar nombre" required={true} value={nombre} set={setNombre}/>
                     <CampoTexto label="Puesto" placeholder="Ingresar puesto" required value={puesto} set={setPuesto}/>
                     <CampoTexto label="Foto" placeholder="Ingresar enlace de foto" required value={foto} set={setFoto}/>
-                    <ListaOpciones />
+                    <ListaOpciones value={equipo} set={setEquipo} />
                     <Boton>
                         Crear
                     </Boton>
