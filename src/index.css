@@ -4,6 +4,7 @@
   --color-principal-verde: #95FFD4;
   --color-principal-gris: #F2F2F2;
   --color-principal-blanco: #FFFFFF;
+  --color-principal-negro: #212121;
 
   /*Colores de equipos*/
 
@@ -37,5 +38,4 @@ body {
 .titulo__principal{
   font-family: var(--prata);
   font-weight: 400;
-  /*text-align: center;*/
 }
