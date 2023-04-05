@@ -1,3 +1,29 @@
+:root{
+  /*Colores Principales*/
+  --color-principal-azul: #6278f7;
+  --color-principal-verde: #95FFD4;
+  --color-principal-gris: #F2F2F2;
+  --color-principal-blanco: #FFFFFF;
+
+  /*Colores de equipos*/
+
+  --fondo-programacion: #D9F7E9;
+  --fondo-frontEnd: #E8F8FF;
+  --fondo-dataScience: #F0F8E2;
+  --fondo-devops: #FDE7E8;
+  --fondo-uxDiseño: #FAE9F5;
+  --fondo-movil: #FFF5D9;
+  --fondo-innovacionGestion: #FFEEDF;
+
+  --destaque-programacion: #57C278;
+  --destaque-frontEnd: #82CFFA;
+  --destaque-dataScience: #A6D157;
+  --destaque-devops: #E06B69;
+  --destaque-uxDiseño: #DB6EBF;
+  --destaque-movil: #FFBA05;
+  --destaque-innovacionGestion: #FF8A29;
+}
+
 body {
   margin: 0;
   font-family: 'Prata', serif;
