@@ -22,10 +22,20 @@
   --destaque-uxDiseño: #DB6EBF;
   --destaque-movil: #FFBA05;
   --destaque-innovacionGestion: #FF8A29;
+
+  /*fuentes*/
+
+  --prata: 'Prata', serif;
+  --montserrat: 'Montserrat', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: 'Prata', serif;
-  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: var(--montserrat);
+}
+
+.titulo__principal{
+  font-family: var(--prata);
+  font-weight: 400;
+  /*text-align: center;*/
 }
