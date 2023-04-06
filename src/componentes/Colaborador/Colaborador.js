@@ -2,9 +2,11 @@ import "./Colaborador.css"
 
 const Colaborador = (props) => {
     const {nombre, puesto, foto, equipo} = props.datos
+    const {destaque} = props
 
+    const destaqueEncabezado = {backgroundColor: destaque}
     return <div className="colaborador">
-                <div className="encabezado">
+                <div className="encabezado" style={destaqueEncabezado}>
                     <img className="encabezado__img" src={foto} alt={nombre}/>
                 </div>
                 <div className="info">
