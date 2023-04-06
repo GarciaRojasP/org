@@ -8,12 +8,20 @@ import Equipo from './componentes/Equipo/Equipo.js';
 function App() {
 
   const [mostrarFormulario, actualizarMostrar] = useState(false)
+  const [colaboradores, setColaboradores] = useState([])
 
   //Ternario --> condicion ? seMuestra : noSeMuestra
   //fragmas --> <></>
   //corto circuito --> condicion && seMuestra
   const cambiarEstado = () => {
     actualizarMostrar(!mostrarFormulario);
+  }
+
+  //Registrar colaborador
+  const registrarColaborador = (colaborador) => {
+    console.log("Nuevo coladorador", colaborador)
+    //Spread operator
+    setColaboradores([...colaboradores, colaborador])
   }
 
   //Lista de equipos
@@ -57,7 +65,12 @@ function App() {
   return (
     <div>
       <Header />
-      {mostrarFormulario ? <Formulario equipos={equipos.map( (equipo) => equipo.titulo )} /> : <></> }
+      {
+        mostrarFormulario ? <Formulario equipos={equipos.map( (equipo) => equipo.titulo )} 
+                                        addColaborador={registrarColaborador}
+                           /> : <></> 
+      }
+      
       <MiOrg estado={cambiarEstado} />
 
       {
