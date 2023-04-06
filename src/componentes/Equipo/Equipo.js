@@ -4,7 +4,7 @@ const Equipo = (props)  => {
     //Destructuración
     const {titulo, fondo, destaque} = props.datos;
 
-    const fondoEquipo = { backgrounColor: fondo }
+    const fondoEquipo = { backgroundColor: fondo }
     const destaqueEquipo = { borderColor: destaque }
 
     return <section className="ctn-equipo" style={fondoEquipo}>

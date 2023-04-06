@@ -4,7 +4,7 @@ import CampoTexto from "../CampoTexto/CampoTexto.js"
 import ListaOpciones from "../CampoTexto/ListaOpciones.js"
 import Boton from "../Boton/Boton.js"
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const [nombre,setNombre] = useState("");
     const [puesto,setPuesto] = useState("");
@@ -36,7 +36,7 @@ const Formulario = () => {
                     <CampoTexto label="Nombre" placeholder="Ingresar nombre" required={true} value={nombre} set={setNombre}/>
                     <CampoTexto label="Puesto" placeholder="Ingresar puesto" required value={puesto} set={setPuesto}/>
                     <CampoTexto label="Foto" placeholder="Ingresar enlace de foto" required value={foto} set={setFoto}/>
-                    <ListaOpciones value={equipo} set={setEquipo} />
+                    <ListaOpciones value={equipo} set={setEquipo} equipos={props.equipos}/>
                     <Boton>
                         Crear
                     </Boton>
