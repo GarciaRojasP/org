@@ -76,7 +76,7 @@ function App() {
       {
         equipos.map( (equipo) =>  <Equipo datos={equipo} 
                                           key={equipo.titulo}
-                                          mandarColaboradores={colaboradores}
+                                          mandarColaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)}
                                   /> )
       }
       
