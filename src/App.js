@@ -74,7 +74,10 @@ function App() {
       <MiOrg estado={cambiarEstado} />
 
       {
-        equipos.map( (equipo) =>  <Equipo datos={equipo} key={equipo.titulo}/> )
+        equipos.map( (equipo) =>  <Equipo datos={equipo} 
+                                          key={equipo.titulo}
+                                          mandarColaboradores={colaboradores}
+                                  /> )
       }
       
     </div>
