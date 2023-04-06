@@ -1,6 +1,5 @@
 .ctn-equipo{
     width: 100%;
-    background-color: var(--fondo-programacion);
     padding: 32px;
     box-sizing: border-box;
     text-align: center;
@@ -10,7 +9,7 @@
     font-weight: 400;
     color: var(--color-principal-negro);
     padding-bottom: 8px;
-    border-bottom: 4px solid var(--destaque-programacion);
+    border-bottom: 4px solid;
     display: inline-block;
 }
 /*.colaboradores{

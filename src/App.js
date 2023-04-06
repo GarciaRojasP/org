@@ -15,18 +15,55 @@ function App() {
   const cambiarEstado = () => {
     actualizarMostrar(!mostrarFormulario);
   }
+
+  //Lista de equipos
+  const equipos = [
+                    {
+                      titulo: "Programación",
+                      fondo: "#D9F7E9",
+                      destaque: "#57C278 "
+                    },
+                    {
+                      titulo: "Front End",
+                      fondo: "#E8F8FF",
+                      destaque: "#82CFFA"
+                    },
+                    {
+                      titulo: "Data Science",
+                      fondo: "#F0F8E2",
+                      destaque: "#A6D157"
+                    },
+                    {
+                      titulo: "Devops",
+                      fondo: "#FDE7E8",
+                      destaque: "#E06B69"
+                    },
+                    {
+                      titulo: "UX y Diseño",
+                      fondo: "#FAE9F5",
+                      destaque: "#DB6EBF"
+                    },
+                    {
+                      titulo: "Móvil",
+                      fondo: "#FFF5D9",
+                      destaque: "#FFBA05"
+                    },
+                    {
+                      titulo: "Innovación y  Gestión",
+                      fondo: "#FFEEDF",
+                      destaque: "#FF8A29"
+                    }
+                  ]
   return (
     <div>
       <Header />
       {mostrarFormulario ? <Formulario /> : <></> }
       <MiOrg estado={cambiarEstado} />
-      <Equipo equipo="Programacion"/>
-      <Equipo equipo="Front End"/>
-      <Equipo equipo="Data Science" />
-      <Equipo equipo="Devops" />
-      <Equipo equipo="UX y Diseño" />
-      <Equipo equipo="Móvil" />
-      <Equipo equipo="Innovación y Gestión" />
+
+      {
+        equipos.map( (equipo) =>  <Equipo datos={equipo} key={equipo.titulo}/> )
+      }
+      
     </div>
   );
 }
