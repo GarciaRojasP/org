@@ -1,4 +1,5 @@
 import "./Colaborador.css"
+import { AiFillCloseCircle } from "react-icons/ai"
 
 const Colaborador = (props) => {
     const {nombre, puesto, foto, equipo} = props.datos
@@ -6,7 +7,7 @@ const Colaborador = (props) => {
 
     const destaqueEncabezado = {backgroundColor: destaque}
     return <div className="colaborador">
-            <span onClick={deleteColaborador}>D</span>
+            <AiFillCloseCircle className="icon__delete" onClick={deleteColaborador} />
                 <div className="encabezado" style={destaqueEncabezado}>
                     <img className="encabezado__img" src={foto} alt={nombre}/>
                 </div>
