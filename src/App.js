@@ -29,6 +29,44 @@ function App() {
                                                         equipo: "Front End"
                                                       }
                                                     ])
+  
+  const [equipos, setEquipos] = useState([
+                                          {
+                                            titulo: "Programación",
+                                            fondo: "#D9F7E9",
+                                            destaque: "#57C278"
+                                          },
+                                          {
+                                            titulo: "Front End",
+                                            fondo: "#E8F8FF",
+                                            destaque: "#82CFFA"
+                                          },
+                                          {
+                                            titulo: "Data Science",
+                                            fondo: "#F0F8E2",
+                                            destaque: "#A6D157"
+                                          },
+                                          {
+                                            titulo: "Devops",
+                                            fondo: "#FDE7E8",
+                                            destaque: "#E06B69"
+                                          },
+                                          {
+                                            titulo: "UX y Diseño",
+                                            fondo: "#FAE9F5",
+                                            destaque: "#DB6EBF"
+                                          },
+                                          {
+                                            titulo: "Móvil",
+                                            fondo: "#FFF5D9",
+                                            destaque: "#FFBA05"
+                                          },
+                                          {
+                                            titulo: "Innovación y  Gestión",
+                                            fondo: "#FFEEDF",
+                                            destaque: "#FF8A29"
+                                          }
+                                        ])
 
   //Ternario --> condicion ? seMuestra : noSeMuestra
   //fragmas --> <></>
@@ -51,47 +89,15 @@ function App() {
 
   //Actualizar color de equipos
   const actualizarColor = (color, titulo) => {
-    console.log("Actualizar:", color, titulo);
+    const equiposActualizados = equipos.map( (equipo) => {
+      if(equipo.titulo === titulo){
+        equipo.destaque = color;
+      }
+      return equipo
+    })
+    setEquipos(equiposActualizados);
   }
 
-  //Lista de equipos
-  const equipos = [
-                    {
-                      titulo: "Programación",
-                      fondo: "#D9F7E9",
-                      destaque: "#57C278 "
-                    },
-                    {
-                      titulo: "Front End",
-                      fondo: "#E8F8FF",
-                      destaque: "#82CFFA"
-                    },
-                    {
-                      titulo: "Data Science",
-                      fondo: "#F0F8E2",
-                      destaque: "#A6D157"
-                    },
-                    {
-                      titulo: "Devops",
-                      fondo: "#FDE7E8",
-                      destaque: "#E06B69"
-                    },
-                    {
-                      titulo: "UX y Diseño",
-                      fondo: "#FAE9F5",
-                      destaque: "#DB6EBF"
-                    },
-                    {
-                      titulo: "Móvil",
-                      fondo: "#FFF5D9",
-                      destaque: "#FFBA05"
-                    },
-                    {
-                      titulo: "Innovación y  Gestión",
-                      fondo: "#FFEEDF",
-                      destaque: "#FF8A29"
-                    }
-                  ]
   return (
     <div>
       <Header />

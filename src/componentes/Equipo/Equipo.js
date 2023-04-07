@@ -7,8 +7,8 @@ const Equipo = (props)  => {
     const {mandarColaboradores, deleteColaborador, updateColor} = props
     /*console.log(mandarColaboradores.length > 0)*/
 
-    const fondoEquipo = { backgroundColor: fondo }
-    const destaqueEquipo = { borderColor: destaque }
+    const fondoEquipo = { backgroundColor: destaque }
+    const borderTitulo = { borderColor: destaque }
 
     return <> 
                 { 
@@ -16,12 +16,12 @@ const Equipo = (props)  => {
                     <section className="ctn-equipo" style={fondoEquipo}>
                         <input type="color" 
                                className="input-color" 
-                               value={fondo} onChange={(evento) => {
-                                                                    updateColor(evento.target.value, titulo);
-                                                                   }} 
+                               value={destaque} onChange={(evento) => {
+                                                                        updateColor(evento.target.value, titulo);
+                                                                      }} 
                         />
 
-                        <h3 className="titulo__principal titulo__principal-equipo--modificador" style={destaqueEquipo} > {titulo} </h3>
+                        <h3 className="titulo__principal titulo__principal-equipo--modificador" style={borderTitulo} > {titulo} </h3>
                         <div className="colaboradores">
                             {
                                 mandarColaboradores.map( (colaborador, index) => <Colaborador key={index} 
