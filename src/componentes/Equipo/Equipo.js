@@ -1,5 +1,6 @@
 import "./Equipo.css"
 import Colaborador from "../Colaborador/Colaborador";
+import hexToRgba from 'hex-to-rgba';
 
 const Equipo = (props)  => {
     //Destructuración
@@ -7,7 +8,7 @@ const Equipo = (props)  => {
     const {mandarColaboradores, deleteColaborador, updateColor} = props
     /*console.log(mandarColaboradores.length > 0)*/
 
-    const fondoEquipo = { backgroundColor: destaque }
+    const fondoEquipo = { backgroundColor: hexToRgba(destaque, 0.3) }
     const borderTitulo = { borderColor: destaque }
 
     return <> 
