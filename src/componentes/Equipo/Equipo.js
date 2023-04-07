@@ -4,7 +4,7 @@ import Colaborador from "../Colaborador/Colaborador";
 const Equipo = (props)  => {
     //Destructuración
     const {titulo, fondo, destaque} = props.datos;
-    const {mandarColaboradores} = props
+    const {mandarColaboradores, deleteColaborador} = props
     /*console.log(mandarColaboradores.length > 0)*/
 
     const fondoEquipo = { backgroundColor: fondo }
@@ -20,6 +20,7 @@ const Equipo = (props)  => {
                                 mandarColaboradores.map( (colaborador, index) => <Colaborador key={index} 
                                                                                               datos={colaborador}
                                                                                               destaque={destaque}
+                                                                                              deleteColaborador={deleteColaborador}
                                                                                 />
                                                         )
                             }
