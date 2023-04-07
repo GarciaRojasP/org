@@ -1,0 +1,24 @@
+import "./Footer.css"
+
+const Footer = () => {
+
+    const fondoFooter = {backgroundImage: "url(/img/footer.png)"}
+
+    return <footer className='footer' style={fondoFooter}>
+                <div className='redes'>
+                    <a href='https://www.aluracursos.com/' target="_blank">
+                        <img className="icon" src="/img/facebook.png" alt='Facebook'  />
+                    </a>
+                    <a href='https://www.aluracursos.com/' target="_blank">
+                        <img className="icon" src="/img/twitter.png" alt='twitter'  />
+                    </a>
+                    <a href='https://www.aluracursos.com/' target="_blank">
+                        <img className="icon" src="/img/instagram.png" alt='instagram'  />
+                    </a>
+                </div>
+                <img src='/img/Logo.png' alt='org' />
+                <strong>Desarrollado por Alura</strong>
+            </footer>
+}
+
+export default Footer

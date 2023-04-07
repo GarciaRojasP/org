@@ -4,30 +4,31 @@ import Header from './componentes/Header/Header.js';
 import Formulario from './componentes/Formulario/Formulario.js';
 import MiOrg from './componentes/MiOrg/MiOrg.js';
 import Equipo from './componentes/Equipo/Equipo.js';
+import Footer from './componentes/Footer/Footer.js';
 
 function App() {
 
   const [mostrarFormulario, actualizarMostrar] = useState(false)
   const [colaboradores, setColaboradores] = useState([
-{
-nombre:"Harland Lohora",
-puesto: "Instructor",
-foto: "https://github.com/harlandlohora.png",
-equipo: "Programación"
-},
-{
-  nombre:"Genesy Rondón",
-  puesto: "Desarrolladora de software e instructora",
-  foto: "https://github.com/genesysaluralatam.png",
-  equipo: "UX y Diseño"
-},
-{
-  nombre:"Jeanmarie Quijada",
-  puesto: "Instructora en Alura Latam",
-  foto: "https://github.com/JeanmarieAluraLatam.png",
-  equipo: "Front End"
-}
-  ])
+                                                      {
+                                                      nombre:"Harland Lohora",
+                                                      puesto: "Instructor",
+                                                      foto: "https://github.com/harlandlohora.png",
+                                                      equipo: "Programación"
+                                                      },
+                                                      {
+                                                        nombre:"Genesy Rondón",
+                                                        puesto: "Desarrolladora de software e instructora",
+                                                        foto: "https://github.com/genesysaluralatam.png",
+                                                        equipo: "UX y Diseño"
+                                                      },
+                                                      {
+                                                        nombre:"Jeanmarie Quijada",
+                                                        puesto: "Instructora en Alura Latam",
+                                                        foto: "https://github.com/JeanmarieAluraLatam.png",
+                                                        equipo: "Front End"
+                                                      }
+                                                    ])
 
   //Ternario --> condicion ? seMuestra : noSeMuestra
   //fragmas --> <></>
@@ -99,6 +100,7 @@ equipo: "Programación"
                                   /> )
       }
       
+      <Footer />
     </div>
   );
 }
