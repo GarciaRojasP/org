@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { v4 as uuid } from 'uuid';
 import './App.css';
 import Header from './componentes/Header/Header.js';
 import Formulario from './componentes/Formulario/Formulario.js';
@@ -11,18 +12,21 @@ function App() {
   const [mostrarFormulario, actualizarMostrar] = useState(false)
   const [colaboradores, setColaboradores] = useState([
                                                       {
-                                                      nombre:"Harland Lohora",
-                                                      puesto: "Instructor",
-                                                      foto: "https://github.com/harlandlohora.png",
-                                                      equipo: "Programación"
+                                                        id: uuid(),
+                                                        nombre:"Harland Lohora",
+                                                        puesto: "Instructor",
+                                                        foto: "https://github.com/harlandlohora.png",
+                                                        equipo: "Programación"
                                                       },
                                                       {
+                                                        id: uuid(),
                                                         nombre:"Genesy Rondón",
                                                         puesto: "Desarrolladora de software e instructora",
                                                         foto: "https://github.com/genesysaluralatam.png",
                                                         equipo: "UX y Diseño"
                                                       },
                                                       {
+                                                        id: uuid(),
                                                         nombre:"Jeanmarie Quijada",
                                                         puesto: "Instructora en Alura Latam",
                                                         foto: "https://github.com/JeanmarieAluraLatam.png",
@@ -32,36 +36,43 @@ function App() {
   
   const [equipos, setEquipos] = useState([
                                           {
+                                            id: uuid(),
                                             titulo: "Programación",
                                             fondo: "#D9F7E9",
                                             destaque: "#57C278"
                                           },
                                           {
+                                            id: uuid(),
                                             titulo: "Front End",
                                             fondo: "#E8F8FF",
                                             destaque: "#82CFFA"
                                           },
                                           {
+                                            id: uuid(),
                                             titulo: "Data Science",
                                             fondo: "#F0F8E2",
                                             destaque: "#A6D157"
                                           },
                                           {
+                                            id: uuid(),
                                             titulo: "Devops",
                                             fondo: "#FDE7E8",
                                             destaque: "#E06B69"
                                           },
                                           {
+                                            id: uuid(),
                                             titulo: "UX y Diseño",
                                             fondo: "#FAE9F5",
                                             destaque: "#DB6EBF"
                                           },
                                           {
+                                            id: uuid(),
                                             titulo: "Móvil",
                                             fondo: "#FFF5D9",
                                             destaque: "#FFBA05"
                                           },
                                           {
+                                            id: uuid(),
                                             titulo: "Innovación y  Gestión",
                                             fondo: "#FFEEDF",
                                             destaque: "#FF8A29"
@@ -88,9 +99,10 @@ function App() {
   }
 
   //Actualizar color de equipos
-  const actualizarColor = (color, titulo) => {
+  const actualizarColor = (color, id) => {
+    console.log("Actualizar equipo:", color, id)
     const equiposActualizados = equipos.map( (equipo) => {
-      if(equipo.titulo === titulo){
+      if(equipo.id === id){
         equipo.destaque = color;
       }
       return equipo
