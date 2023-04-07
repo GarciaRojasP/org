@@ -49,6 +49,11 @@ function App() {
     console.log("Elimar colaborador");
   }
 
+  //Actualizar color de equipos
+  const actualizarColor = (color, titulo) => {
+    console.log("Actualizar:", color, titulo);
+  }
+
   //Lista de equipos
   const equipos = [
                     {
@@ -103,6 +108,7 @@ function App() {
                                           key={equipo.titulo}
                                           mandarColaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)}
                                           deleteColaborador={eliminarColaborador}
+                                          updateColor={actualizarColor}
                                   /> )
       }
       

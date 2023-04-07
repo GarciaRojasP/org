@@ -4,7 +4,7 @@ import Colaborador from "../Colaborador/Colaborador";
 const Equipo = (props)  => {
     //Destructuración
     const {titulo, fondo, destaque} = props.datos;
-    const {mandarColaboradores, deleteColaborador} = props
+    const {mandarColaboradores, deleteColaborador, updateColor} = props
     /*console.log(mandarColaboradores.length > 0)*/
 
     const fondoEquipo = { backgroundColor: fondo }
@@ -14,10 +14,13 @@ const Equipo = (props)  => {
                 { 
                     mandarColaboradores.length > 0 &&
                     <section className="ctn-equipo" style={fondoEquipo}>
-                        <input type="color" className="input-color" value={fondo} onChange={(evento) => {
-                                                                                                    console.log(evento.target.value);
-                                                                                                  }} />
-                                                                                                  
+                        <input type="color" 
+                               className="input-color" 
+                               value={fondo} onChange={(evento) => {
+                                                                    updateColor(evento.target.value, titulo);
+                                                                   }} 
+                        />
+
                         <h3 className="titulo__principal titulo__principal-equipo--modificador" style={destaqueEquipo} > {titulo} </h3>
                         <div className="colaboradores">
                             {
