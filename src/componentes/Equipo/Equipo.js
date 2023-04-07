@@ -14,6 +14,10 @@ const Equipo = (props)  => {
                 { 
                     mandarColaboradores.length > 0 &&
                     <section className="ctn-equipo" style={fondoEquipo}>
+                        <input type="color" className="input-color" value={fondo} onChange={(evento) => {
+                                                                                                    console.log(evento.target.value);
+                                                                                                  }} />
+                                                                                                  
                         <h3 className="titulo__principal titulo__principal-equipo--modificador" style={destaqueEquipo} > {titulo} </h3>
                         <div className="colaboradores">
                             {
