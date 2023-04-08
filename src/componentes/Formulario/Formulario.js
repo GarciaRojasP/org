@@ -2,7 +2,7 @@ import { useState } from "react"
 import { v4 as uuid } from 'uuid';
 import "./Formulario.css"
 import Campo from "../Campo/Campo.js"
-import ListaOpciones from "../CampoTexto/ListaOpciones.js"
+import ListaOpciones from "../Campo/ListaOpciones.js"
 import Boton from "../Boton/Boton.js"
 
 const Formulario = (props) => {
