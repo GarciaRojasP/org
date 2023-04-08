@@ -1,4 +1,4 @@
-import "./CampoTexto.css"
+import "./Campo.css"
 
 //Para recorrer un arreglo se requiere usar map en React
 //Método map => arreglo.map( (equipo, index) => {
@@ -11,7 +11,7 @@ const ListaOpciones = (props) => {
         props.set(event.target.value)
     }
 
-    return <div className="campo-texto">
+    return <div className="campo">
                 <label className="label" >Equipos</label>
                 
                 <select className="input select" value={props.value} onChange={manejarCambio}>
