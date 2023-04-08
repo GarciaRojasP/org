@@ -1,4 +1,5 @@
 .orgSectio{
+    min-height: calc(100vh - 860px) ;
     width: 100%;
     display: flex;
     justify-content: center;
