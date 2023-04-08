@@ -16,6 +16,16 @@
     position: absolute;
     right: 8%;
     cursor: pointer;
+    width: 95px;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+.orgSectio img:hover{
+    width: 105px;
 }
 
 @media screen and (max-width:768px) {

@@ -21,6 +21,14 @@ function App() {
                                                       },
                                                       {
                                                         id: uuid(),
+                                                        nombre:"José Gónzalez",
+                                                        puesto: "Instructora en Alura Latam",
+                                                        foto: "https://github.com/JoseDarioGonzalezCha.png",
+                                                        equipo: "Programación",
+                                                        fav: true
+                                                      },
+                                                      {
+                                                        id: uuid(),
                                                         nombre:"Christian Velasco",
                                                         puesto: "Dev. FullStack",
                                                         foto: "https://github.com/christianpva.png",
