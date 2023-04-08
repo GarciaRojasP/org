@@ -16,21 +16,24 @@ function App() {
                                                         nombre:"Harland Lohora",
                                                         puesto: "Instructor",
                                                         foto: "https://github.com/harlandlohora.png",
-                                                        equipo: "Programación"
+                                                        equipo: "Programación",
+                                                        fav: true
                                                       },
                                                       {
                                                         id: uuid(),
                                                         nombre:"Genesy Rondón",
                                                         puesto: "Desarrolladora de software e instructora",
                                                         foto: "https://github.com/genesysaluralatam.png",
-                                                        equipo: "UX y Diseño"
+                                                        equipo: "UX y Diseño",
+                                                        fav: false
                                                       },
                                                       {
                                                         id: uuid(),
                                                         nombre:"Jeanmarie Quijada",
                                                         puesto: "Instructora en Alura Latam",
                                                         foto: "https://github.com/JeanmarieAluraLatam.png",
-                                                        equipo: "Front End"
+                                                        equipo: "Front End",
+                                                        fav: false
                                                       }
                                                     ])
   
@@ -118,6 +121,18 @@ function App() {
     setEquipos([...equipos, { ...nuevoEquipo, id: uuid()} ])
   }
 
+  //Me encanta
+  const meEncanta = (id) => {
+    console.log("Me encanta:", id)
+    const updateMeEncanta = colaboradores.map( (colaborador) => {
+      if(colaborador.id === id ){
+        colaborador.fav = !colaborador.fav
+      }
+      return colaborador
+    })
+    setColaboradores(updateMeEncanta)
+  }
+
   return (
     <div>
       <Header />
@@ -136,6 +151,7 @@ function App() {
                                           mandarColaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)}
                                           deleteColaborador={eliminarColaborador}
                                           updateColor={actualizarColor}
+                                          estado={meEncanta}
                                   /> )
       }
       
