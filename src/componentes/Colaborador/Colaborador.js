@@ -6,8 +6,8 @@ const Colaborador = (props) => {
     const {destaque, deleteColaborador, estado} = props
 
     const destaqueEncabezado = {backgroundColor: destaque}
-    return <div className="colaborador">
-            <AiFillCloseCircle className="icon__delete" onClick={ () => deleteColaborador(id)} />
+    return <div className="colaborador" >
+            <AiFillCloseCircle className="icon-funcion icon__delete" onClick={ () => deleteColaborador(id)} />
                 <div className="encabezado" style={destaqueEncabezado}>
                     <img className="encabezado__img" src={foto} alt={nombre}/>
                 </div>

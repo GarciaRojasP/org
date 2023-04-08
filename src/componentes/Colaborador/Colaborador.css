@@ -4,22 +4,35 @@
     position: relative;
 }
 
-.icon__delete{
+.icon-funcion{
     position: absolute;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+.icon__delete{
     right: -10px;
     top: -10px;
-    font-size: 30px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+}
+
+.icon-edit{
+    right: 20px;
+    top: -10px;
 }
 
 .icon__delete:hover{
-    font-size: 32px;
+    font-size: 28px;
     color: #e53935
+}
+
+.icon-edit:hover{
+    font-size: 28px;
+    color: blue;
 }
 
 .encabezado{

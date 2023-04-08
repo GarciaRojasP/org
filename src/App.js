@@ -138,6 +138,8 @@ function App() {
                                           }
                                         ])
 
+  const [modoEdit, setModoEdit] = useState(false)
+
   //Ternario --> condicion ? seMuestra : noSeMuestra
   //fragmas --> <></>
   //corto circuito --> condicion && seMuestra
@@ -158,7 +160,7 @@ function App() {
     const nuevosColaboradores = colaboradores.filter( (colaborador) => { return colaborador.id !== id})
     setColaboradores(nuevosColaboradores);
   }
-
+  
   //Actualizar color de equipos
   const actualizarColor = (color, id) => {
     console.log("Actualizar equipo:", color, id)
