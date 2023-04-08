@@ -14,9 +14,41 @@ function App() {
                                                       {
                                                         id: uuid(),
                                                         nombre:"Harland Lohora",
-                                                        puesto: "Instructor",
+                                                        puesto: "Instructor Alura Latan",
                                                         foto: "https://github.com/harlandlohora.png",
                                                         equipo: "Programación",
+                                                        fav: true
+                                                      },
+                                                      {
+                                                        id: uuid(),
+                                                        nombre:"Christian Velasco",
+                                                        puesto: "Dev. FullStack",
+                                                        foto: "https://github.com/christianpva.png",
+                                                        equipo: "Programación",
+                                                        fav: false
+                                                      },
+                                                      {
+                                                        id: uuid(),
+                                                        nombre:"Christian Velasco",
+                                                        puesto: "Dev. FullStack",
+                                                        foto: "https://github.com/christianpva.png",
+                                                        equipo: "Data Science",
+                                                        fav: false
+                                                      },
+                                                      {
+                                                        id: uuid(),
+                                                        nombre:"Christian Velasco",
+                                                        puesto: "Dev. FullStack",
+                                                        foto: "https://github.com/christianpva.png",
+                                                        equipo: "Front End",
+                                                        fav: false
+                                                      },
+                                                      {
+                                                        id: uuid(),
+                                                        nombre:"Harland Lohora",
+                                                        puesto: "Desarrollador móvil",
+                                                        foto: "https://github.com/harlandlohora.png",
+                                                        equipo: "Móvil",
                                                         fav: true
                                                       },
                                                       {
@@ -26,6 +58,22 @@ function App() {
                                                         foto: "https://github.com/genesysaluralatam.png",
                                                         equipo: "UX y Diseño",
                                                         fav: false
+                                                      },
+                                                      {
+                                                        id: uuid(),
+                                                        nombre:"Jeanmarie Quijada",
+                                                        puesto: "Instructora en Alura Latam",
+                                                        foto: "https://github.com/JeanmarieAluraLatam.png",
+                                                        equipo: "Innovación y  Gestión",
+                                                        fav: true
+                                                      },
+                                                      {
+                                                        id: uuid(),
+                                                        nombre:"José Gónzalez",
+                                                        puesto: "Instructora en Alura Latam",
+                                                        foto: "https://github.com/JoseDarioGonzalezCha.png",
+                                                        equipo: "Devops",
+                                                        fav: true
                                                       },
                                                       {
                                                         id: uuid(),
