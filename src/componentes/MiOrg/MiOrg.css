@@ -17,3 +17,27 @@
     right: 8%;
     cursor: pointer;
 }
+
+@media screen and (max-width:768px) {
+    .orgSectio{
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .orgSectio img{
+        position: static;
+    }
+
+    .titulo__principal-miorg--modificador{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .titulo__principal-miorg--modificador{
+        font-size: 24px;
+    }
+}

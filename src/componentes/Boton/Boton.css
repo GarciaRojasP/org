@@ -22,3 +22,11 @@
 .boton:hover{
     color: var(--color-principal-verde);
 }
+
+
+@media screen and (max-width:320px) {
+
+    .boton{
+        padding: 1rem;
+    }
+}

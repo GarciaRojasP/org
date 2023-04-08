@@ -38,4 +38,5 @@ body {
 .titulo__principal{
   font-family: var(--prata);
   font-weight: 400;
+  text-align: center;
 }
