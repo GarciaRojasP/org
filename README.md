@@ -1,6 +1,6 @@
 # <h1 align="center">Proyecto Org<h1>
 
-Proyecto Org del curso "React: Desarrollando con JavaScript y React: Como los componentes funcionan", de Alura LATAM.
+Proyecto Org del curso "React: Desarrollando con JavaScript y React: Como los componentes funcionan", de Alura Latam Oracle Next Education.
 <p><a href="https://www.figma.com/file/g0lPfF6MnBImDq7ube3STz/Intro-a-React-Org?node-id=134-128&t=xheE5WPjkpJNZuTf-0">Modelo Figma Org propuesto por Alura Latan</a></p>
 <hr>
 <h3>Apactación a diferentes dispositivos</h3>
@@ -17,4 +17,3 @@ Proyecto Org del curso "React: Desarrollando con JavaScript y React: Como los co
   <li>Responsivo (Extra)</li>
   <li>Se subió en vercel</li>
  </ul>
- 
